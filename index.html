@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفصل الثالث: التخطيط</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better Arabic readability */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Noto Naskh Arabic', 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background for the whole page */
+        }
+        /* Styling for headings to ensure proper spacing and appearance */
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+        /* Specific styling for list items to ensure proper numbering and alignment */
+        ul {
+            list-style-type: disc; /* Default disc for unordered lists */
+            padding-right: 1.5rem; /* Padding for list items */
+        }
+        ol {
+            list-style-type: decimal; /* Default decimal for ordered lists */
+            padding-right: 1.5rem; /* Padding for list items */
+        }
+        li {
+            margin-bottom: 0.5rem; /* Space between list items */
+        }
+        /* Ensure images are responsive and don't overflow */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem; /* Rounded corners for images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+        }
+        /* Hide sections by default, JavaScript will manage visibility */
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="text-gray-800 leading-relaxed">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 shadow-lg rounded-b-xl">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-extrabold mb-2">كلية العلوم الإدارية والمالية</h1>
+            <h2 class="text-2xl font-semibold mb-1">قسم إدارة الأعمال</h2>
+            <h3 class="text-xl font-medium">مساق مبادئ الإدارة</h3>
+            <p class="text-lg">2025</p>
+            <p class="text-xl font-bold mt-4">إعداد وتقديم: قيس طلال غالب الجازي</p>
+            <p class="text-lg">2025</p>
+            <div class="mt-4 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4">
+                <img src="https://th.bing.com/th/id/OIP.RDNcM0d901BorfZDrZIjBQHaHZ?rs=1&pid=ImgDetMain" alt="شعار جامعة إربد الأهلية" class="w-24 h-24 rounded-full border-4 border-white shadow-md">
+                <span class="text-3xl font-bold">جامعة إربد الأهلية</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <!-- Chapter Title and Navigation Buttons -->
+        <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-4">الفصل الثالث: التخطيط</h2>
+            <nav class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-6">
+                <button id="showAdministrative" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md shadow-md transition duration-300 ease-in-out text-lg">
+                    المبحث الأول: التخطيط الإداري
+                </button>
+                <button id="showStrategic" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-md shadow-md transition duration-300 ease-in-out text-lg">
+                    المبحث الثاني: التخطيط الاستراتيجي
+                </button>
+            </nav>
+        </section>
+
+        <!-- Section for Administrative Planning Content -->
+        <section id="administrative-planning-content" class="content-section bg-white p-6 rounded-lg shadow-md mb-8 active">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-4 border-b-2 border-blue-300 pb-2">المبحث الأول: التخطيط الإداري</h2>
+
+            <!-- Section: مفهوم التخطيط الإداري -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">مفهوم التخطيط الإداري</h3>
+                <ul class="list-none pr-0">
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">التنبؤ بالمستقبل وإعداد التدابير اللازمة لمواجهته بخطوات منظمة.</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">الطريقة التي تحقق فيها المنظمة أهدافها ورسالتها عن طريق إعداد وتنفيذ ومتابعة تقييم مجموعة من الخطط والبرامج لتحقيق نتائج معينة باستخدام موارد محددة.</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">التخطيط عمل فكري يعتمد المخطط على خبراته ومهارته في دراسة الوضع الراهن للمنظمة ومحاولة معرفة الظروف المحيطة بها.</p>
+                    </li>
+                </ul>
+                <p class="mt-4 text-lg">هو نشاط يستهدف تحديد الوضع الحالي للمنظمة وتحديد الوضع المستقبلي المستهدف وكيفية تحقيق ذلك.</p>
+                <p class="mt-2 text-lg">يتم تحقيق ذلك من خلال وضع الغايات والأهداف النهائية للمنظمة وصياغة السياسات وتحديد الوسائل المؤدية إلى تحقيق تلك الغايات وتحديد وتوزيع الأدوار والموارد مع تحديد الوقت اللازم.</p>
+            </section>
+
+            <!-- Section: أهمية التخطيط الإداري -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">أهمية التخطيط الإداري</h3>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-2">
+                        <span class="font-semibold">تحديد الأهداف:</span> لأنه سيتم تحقيقها مستقبلاً، وتوضيحها للأفراد الذين سيعملون على تحقيقها، وضع معيار سليم لتقويم الأداء الوظيفي.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">التنبؤ بالمستقبل:</span> دراسة العوامل في البيئة وإعداد خطة منطقية تساعد في درء الخطر المتوقع وتفادي ما يحتويه المستقبل من مشكلات.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">الترابط المنطقي للقرارات:</span> وضوح الأهداف يؤدي إلى ترابط بين القرارات الصادرة من الرئيس إلى المرؤوسين.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">تقويم الأداء:</span> يساعد التخطيط في وضع معايير تقييم تتناسب مع الخطة المطلوبة، مما يجعلها أكثر فعالية.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">التنسيق:</span> يساعد في توجيه جميع الجهود والأهداف الفرعية في المنظمة نحو الهدف الرئيس.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">الاستخدام الأمثل للموارد المتاحة:</span> يوجه الموارد المتاحة (الموارد المالية، القوى البشرية، المواد الخام) نحو الأنشطة المهمة والتي تساعد في تحقيق هدف المنظمة الرئيس.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">الرقابة المحكمة:</span> يسهل التخطيط عملية الرقابة ويرفع من مستوى أدائها وكفاءتها وذلك لمتابعة تحقيق الأهداف المحددة سابقاً.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">تسهيل مهمة القائد:</span> التخطيط يحدد أساليب العمل وتقسيمه والخطوات المطلوب اتباعها.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">الرضا والارتياح النفسي للعاملين:</span> الخطة المحكمة المدروسة تجعل الموظفين يؤدون واجباتهم بثقة.
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Section: خصائص التخطيط الإداري -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">خصائص التخطيط الإداري</h3>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-2">أن يكون للخطة هدف نهائي واضح ومحدد.</li>
+                    <li class="mb-2">أن تتميز الخطة بالبساطة والوضوح.</li>
+                    <li class="mb-2">أن تتضمن الخطة تعريفاً واضحاً لكل الأجهزة الإدارية.</li>
+                    <li class="mb-2">مدى ملاءمة الخطة للزمان والمكان والظروف.</li>
+                    <li class="mb-2">الدقة في بيانات الخطة وحساباتها.</li>
+                    <li class="mb-2">ضرورة مرونة الخطة لتتمكن من مواجهة ما قد يظهر من صعوبات.</li>
+                    <li class="mb-2">أن يتم بناء الخطة من أسفل إلى أعلى.</li>
+                    <li class="mb-2">إشراك مشرفي تنفيذ الخطة في صياغة ورسم تفصيلاتها.</li>
+                    <li class="mb-2">توضيح وإعلان الخطة لكل من يعنيه تنفيذها.</li>
+                    <li class="mb-2">متابعة الخطة أثناء مراحل التنفيذ للاطمئنان.</li>
+                    <li class="mb-2">ربط الخطط بالزمن.. وبكل جزئية من جزئياتها.</li>
+                    <li class="mb-2">مراعاة العامل الإنساني ودراسة الحوافز.</li>
+                </ol>
+            </section>
+
+            <!-- Section: مقومات التخطيط الإداري -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">مقومات التخطيط الإداري</h3>
+
+                <!-- Sub-section: الأهداف -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">أولاً: الأهداف</h4>
+                <p class="mb-3">هي النتائج المطلوب تحقيقها في المستقبل. إذا كانت في المستقبل البعيد فهي غايات وأهداف استراتيجية، إذا كانت في الأمد القصير تسمى أهداف تكتيكية.</p>
+                <p class="font-semibold mb-2">عوامل يجب أن تتوافر في الأهداف:</p>
+                <ol class="list-decimal pr-6 mb-4">
+                    <li class="mb-1">
+                        <span class="font-semibold">درجة الوضوح:</span> تساعد في توحيد جهود الجماعة وتساعد إدارة المنظمة في القيام بوظائفها الأخرى، وتنسق العمل بين الأفراد والأقسام.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">القناعة بالهدف:</span> كلما زادت قناعة العاملين بالهدف بذلوا جهود أكبر في تحقيقها.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">الواقعية في الهدف:</span> أن يكون الهدف ممكن الوصول إليه، أن يكون ضمن الإمكانات المادية والبشرية للمنظمة.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">التناسق والانسجام:</span> الأهداف الموضوعة متناسقة مع بعضها البعض.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">مشروعية الهدف:</span> يقصد ملائمته للقيم والمثل والتقاليد، ومراعاته للأنظمة واللوائح والسياسات.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">إمكانية القياس:</span> تحديد مقاييس للأهداف: مقياس زمني، مقياس كمي، مقياس نوعي.
+                    </li>
+                </ol>
+
+                <!-- Sub-section: التنبؤ -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">ثانياً: التنبؤ</h4>
+                <p class="mb-3">هو نشاط ذهني مرتبط بوجود الإنسان، ويعرف بأنه التوقع للتغيرات التي قد تحدث مستقبلاً، والتي تؤثر بأسلوب مباشر أو غير مباشر على النشاط.</p>
+                <p class="font-semibold mb-2">يجب أن تراعي عند التنبؤ:</p>
+                <ol class="list-decimal pr-6 mb-4">
+                    <li class="mb-1">أن يكون التنبؤ دقيق وواضح.</li>
+                    <li class="mb-1">أن تكون البيانات والمعلومات التي يعتمد عليها المتنبئ حديثة.</li>
+                    <li class="mb-1">أن يكون التنبؤ مفيد، ويمكن استخدامه.</li>
+                    <li class="mb-1">غير مكلف فلا تفوق تكاليفه الفائدة الاقتصادية المرجوة منه.</li>
+                </ol>
+
+                <!-- Sub-section: السياسات -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">ثالثاً: السياسات</h4>
+                <p class="mb-3">هي مجموعة المبادئ والقواعد التي تحكم سير العمل، ومحدد سلفاً بمعرفة الإدارة.</p>
+                <ul class="list-none pr-0 mb-4">
+                    <li class="mb-1"><span class="font-semibold">الهدف:</span> هو ما نريد تحقيقه.</li>
+                    <li class="mb-1"><span class="font-semibold">السياسة:</span> المرشد لاختيار الطريق الذي يوصل للهدف.</li>
+                </ul>
+
+                <!-- Sub-section: الإجراءات -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">رابعاً: الإجراءات</h4>
+                <p class="mb-3">هي الخطوات المكتبية والمراحل التفصيلية التي توضح أسلوب إتمام الأعمال وكيفية تنفيذها، ومسؤولية هذا التنفيذ والمدة الزمنية لإتمام الأعمال. مثل إجراءات التعيين ومراحله المختلفة.</p>
+
+                <!-- Sub-section: تدبير الوسائل والإمكانيات -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">خامساً: تدبير الوسائل والإمكانيات</h4>
+                <p class="mb-3">لا يمكن تحقيق الأهداف فقط بوجود السياسات والإجراءات يجب توفير وسائل وإمكانات ضرورية لإكمال وتحقيق الأهداف.</p>
+                <p class="font-semibold mb-2">يجب مراعاة عند تحديد الوسائل والإمكانيات:</p>
+                <ul class="list-disc pr-6">
+                    <li class="mb-1">الدقة</li>
+                    <li class="mb-1">الواقعية</li>
+                    <li class="mb-1">تحديد المصدر</li>
+                    <li class="mb-1">المدة الزمنية</li>
+                    <li class="mb-1">التكلفة</li>
+                    <li class="mb-1">الاستمرار</li>
+                </ul>
+            </section>
+
+            <!-- Section: أنواع التخطيط الإداري -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">أنواع التخطيط الإداري</h3>
+
+                <!-- Sub-section: حسب التأثير -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">أولاً: حسب التأثير</h4>
+                <ol class="list-decimal pr-6 mb-4">
+                    <li class="mb-1">
+                        <span class="font-semibold">تخطيط استراتيجي:</span> مهم، يحدث تغيير نوعي بالمنظمة للإدارة العليا، بعيد المدى.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">تخطيط تكتيكي:</span> للإدارة الوسطى والعليا، متوسط المدى، لمساعدة التخطيط الاستراتيجي.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">التخطيط التشغيلي:</span> الإدارة الإشرافية، سير العمل اليومي.
+                    </li>
+                </ol>
+
+                <!-- Sub-section: حسب البعد الزمني -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">ثانياً: حسب البعد الزمني</h4>
+                <ol class="list-decimal pr-6 mb-4">
+                    <li class="mb-1">
+                        <span class="font-semibold">طويل المدى:</span> خطط زمنية طويلة، 5-20 سنة وأكثر، تتسم بالمرونة للتكيف مع التغيرات.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">متوسط المدى:</span> تزيد عن سنة وتقل عن خمس سنوات.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">قصير المدى:</span> أقل من سنة، معالجة الأزمات الطارئة، كلما قصرت المدة كلما تحكمت وسيطرة الإدارة أكثر على عملية التخطيط.
+                    </li>
+                </ol>
+
+                <!-- Sub-section: حسب المجال -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">ثالثاً: حسب المجال</h4>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">
+                        <span class="font-semibold">تخطيط الإنتاج:</span> القرارات التي تتعلق بالإنتاج مثل المواد الخام، العاملين، مراقبة الجودة.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">تخطيط التسويق:</span> قرارات تتعلق بالتسويق مثل تقييم المنتج والتسويق والترويج.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">التخطيط المالي:</span> تتعلق بالجوانب المادية، كيفية توفير الأموال وكيفية إنفاقها.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">تخطيط الموارد البشرية:</span> تركز على الاحتياجات من القوى العاملة، والاستقطاب، التدريب.
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Section: صعوبات التخطيط الإداري -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">صعوبات التخطيط الإداري</h3>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">صعوبة الوصول إلى تنبؤات دقيقة حول المتغيرات البيئية المؤثرة.</li>
+                    <li class="mb-1">بيئة سريعة التغيير.</li>
+                    <li class="mb-1">صعوبة الحصول على المعلومات والبيانات، أو تكون غير دقيقة.</li>
+                    <li class="mb-1">يتطلب خبرة ووقت وأموال وهذا ما يجعل تكلفته عالية.</li>
+                    <li class="mb-1">يواجه مقاومة من قبل الأفراد داخل المنظمة.</li>
+                </ol>
+            </section>
+
+            <!-- Section: خطوات التخطيط الإداري -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">خطوات التخطيط الإداري</h3>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">التحديد المسبق للأهداف المراد الوصول إليها.</li>
+                    <li class="mb-1">وضع سياسات للاسترشاد بها في اختيار أسلوب تحقيق الهدف.</li>
+                    <li class="mb-1">تحليل الوضع الحالي والموارد المتوفرة لتحقيق الأهداف.</li>
+                    <li class="mb-1">بناء قائمة من الاحتمالات لسير الأنشطة.</li>
+                    <li class="mb-1">عمل قائمة بناء على المزايا والعيوب لكل احتمال من احتمالات سير الأنشطة.</li>
+                    <li class="mb-1">اختيار البديل الأفضل من بين البدائل المتاحة.</li>
+                    <li class="mb-1">وضع برامج زمنية لازمة لتنفيذ الهدف، وكيفية القيام بها، والترتيب الزمني لها.</li>
+                    <li class="mb-1">مراقبة وتقييم النتائج والتأكد من أن الخطة تسير مثل ما هو متوقع لها.</li>
+                </ol>
+            </section>
+        </section>
+
+        <!-- Section for Strategic Planning Content -->
+        <section id="strategic-planning-content" class="content-section bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-3xl font-bold text-blue-700 text-center mb-4 border-b-2 border-blue-300 pb-2">المبحث الثاني: التخطيط الاستراتيجي</h2>
+
+            <!-- Section: مفهوم التخطيط الاستراتيجي -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">مفهوم التخطيط الاستراتيجي</h3>
+                <ul class="list-none pr-0">
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">من أصل يوناني وارتبط بالخطط المستخدمة لإدارة قوى الحرب ووضع الخطط العامة في المعارك وتسمى علم الجنرال (القائد).</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">هو أحد المهارات الأساسية للقيادة وهو عبارة عن خارطة ترشد إلى الطريق الصحيح بين نقطتين.</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">الإجابة عن الأسئلة الآتية: أين أنت الآن؟ أين ترغب أن تكون في المستقبل؟ كيف يمكن أن تحقق ذلك؟.</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">أداة إدارية تستخدم لمساعدة المنظمة في أداء عمل أفضل.</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">إضافة كلمة استراتيجي تعطي التخطيط والأهداف صفة النظرة طويلة الأمد والشمول على التخطيط.</p>
+                    </li>
+                    <li class="mb-3">
+                        <p class="font-semibold text-lg">عملية نظامية توافق من خلالها إحدى المنظمات (ويلتزم بذلك الشركاء الرئيسون في المنظمة) على الأولويات التي تعد ضرورية لتحقيق هدفها، وتستجيب للبيئة المحيطة بها في الوقت نفسه.</p>
+                    </li>
+                </ul>
+
+                <h4 class="text-xl font-semibold text-blue-500 mb-3 mt-6">مميزات التخطيط الاستراتيجي:</h4>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">عملية التخطيط هي عملية استراتيجية لأنها تتضمن اختيار أفضل استجابة.</li>
+                    <li class="mb-1">هي عملية منتظمة لأنها تدعو لاتباع عملية تم هيكلتها معتمدة على بيانات.</li>
+                    <li class="mb-1">عملية مستقبلية.</li>
+                    <li class="mb-1">وسيلة للتفكير والتصرف من أجل عمل تغيير معين.</li>
+                    <li class="mb-1">عملية مستمرة.</li>
+                    <li class="mb-1">يشكل التخطيط الاستراتيجي إطار لتوجيه المراحل المستويات الإدارية المختلفة.</li>
+                    <li class="mb-1">ليست عملية سهلة، بل عملية تتطلب بذل المزيد من الجهود.</li>
+                </ol>
+            </section>
+
+            <!-- Section: فلسفة التخطيط الاستراتيجي -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">فلسفة التخطيط الاستراتيجي</h3>
+                <ol class="list-alpha pr-6">
+                    <li class="mb-2">
+                        <span class="font-semibold">فلسفة الأمثلية:</span> تعظيم الأرباح، زيادة الإنتاج، تقليل الهدر، تخفيض التكاليف.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">فلسفة الرضا:</span> تسعى لعمل المطلوب بما يحتاج من كفاية وليس بالضرورة أحسن ما يمكن عمله، تتخذ بديل يرضي الجميع.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">فلسفة التكييف:</span> ضرورة الاستجابة للمتغيرات في بيئة العمل الخارجية والداخلية.
+                    </li>
+                </ol>
+
+                <h4 class="text-xl font-semibold text-blue-500 mb-3 mt-6">مستويات الإدارة الاستراتيجية:</h4>
+                <ol class="list-alpha pr-6">
+                    <li class="mb-2">
+                        <span class="font-semibold">مستوى المنظمة الكلي:</span> تحليل وتعريف الفجوة الاستراتيجية، تحديد الرؤية التي تسعى المنظمة لتحقيقها.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">مستوى الأقسام:</span> تركز على بيان سبل التنافس وتحقيق الإنجاز على صعيد الأقسام لتصبح الاستراتيجية أكثر تركيز.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">مستوى الوظائف:</span> تهتم بمجال وظيفي محدد يعمل على تنظيم استغلال مورد معين، تهتم بعناصر تحليل البيئة الداخلية لتحديد مجالات القوة والضعف وزيادة التنسيق بين الأنشطة.
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Section: المكونات الرئيسية للتخطيط الاستراتيجي -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">المكونات الرئيسية للتخطيط الاستراتيجي</h3>
+                <ol class="list-alpha pr-6">
+                    <li class="mb-2">
+                        <span class="font-semibold">الرؤية (Vision):</span> تحديد ما تريد أن تفعله المنظمة أو الكيفية التي ستؤثر بها على المحيط المستهدف.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">الرسالة (Mission):</span> تحدد الهدف الأساسي للمنظمة واصف بإيجاز لماذا وجدت؟ ماذا تفعل لتحقيق رؤيتها؟. مثال: "عالم خال من الفقر".
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">وثيقة الرسالة (Mission Statement):</span> بيان الغرض من إنشاء المنظمة، وينبغي أن تتسم بالوضوح والدقة في صياغة خطوات التنفيذ. تحدد إطار الاستراتيجيات للمنظمة.
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">القيم (Values):</span> المعتقدات المشتركة بين أصحاب المصلحة في المنظمة. وهي التي توجه ثقافة المجتمع وتصنع أولوياتها في اتخاذ القرارات. مثل: "المعرفة والمهارات هي مفاتيح النجاح".
+                    </li>
+                    <li class="mb-2">
+                        <span class="font-semibold">الاستراتيجية (Strategy):</span> كيف تستطيع المنظمة أن تحرز التفوق؟ هي خريطة الطريق (Roadmap) للمضي قدماً نحو الرؤية المقررة مسبقاً.
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Section: مراحل التخطيط الاستراتيجي -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">مراحل التخطيط الاستراتيجي: مدخلات وعمليات ومخرجات التخطيط</h3>
+                <ol class="list-alpha pr-6">
+                    <li class="mb-2">تجميع المعلومات وتقدير الموقف.</li>
+                    <li class="mb-2">تحديد وصياغة التوجهات الاستراتيجية والأهداف العامة.</li>
+                    <li class="mb-2">إعداد وصياغة الاستراتيجيات لتشمل اتجاهات المنظمة.</li>
+                    <li class="mb-2">إعداد الخطط وبرامج الأعمال لتحويل الاستراتيجيات إلى خطط أعمال محدودة.</li>
+                    <li class="mb-2">وضع وتنفيذ أسس ومعايير وأدوات المتابعة والرقابة للتأكد من انتظام ودقة الأعمال.</li>
+                </ol>
+
+                <h4 class="text-xl font-semibold text-blue-500 mb-3 mt-6">خصائص مراحل التخطيط الاستراتيجي:</h4>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">لا يمكن البدء في مرحلة إلا بعد الانتهاء من المرحلة السابقة لها.</li>
+                    <li class="mb-1">أن وجود كل مرحلة تتوقف على جودة المرحلة السابقة لها.</li>
+                    <li class="mb-1">أن الإدارة عملية مستمرة.</li>
+                    <li class="mb-1">ينبغي النظر إلى الإدارة الاستراتيجية بوصفها عملية ضرورية تتطلب وجود تدفق مستمر للمعلومات.</li>
+                </ol>
+            </section>
+
+            <!-- Section: مراحل التخطيط الاستراتيجي: التصميم، التطبيق (التنفيذ)، التقييم -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-300 pb-2">مراحل التخطيط الاستراتيجي: التصميم، التطبيق (التنفيذ)، التقييم</h3>
+
+                <!-- Sub-section: أولاً: التصميم -->
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">أولاً: التصميم</h4>
+                <p class="mb-3">تهتم بوضع رسالة المنظمة وتقييم البيئة الداخلية وتحديد نقاط الضعف والقوة. وتقييم البيئة الخارجية من حيث تحديد الفرص والتهديدات. وتقسم إلى: تحليل والرصد البيئي، صياغة الاستراتيجية.</p>
+
+                <h5 class="text-lg font-medium text-blue-400 mb-2">أ. مرحلة التحليل والرصد البيئي:</h5>
+                <p class="mb-3">هو استعراض وتقييم وتوزيع المعلومات التي تم الحصول عليها من البيئة الخارجية والداخلية إلى المديرين الاستراتيجيين أهم تحليل هو (SWOT analysis).</p>
+
+                <h5 class="text-lg font-medium text-blue-400 mb-2">أنواع البيئة:</h5>
+                <ul class="list-disc pr-6 mb-4">
+                    <li class="mb-1">
+                        <span class="font-semibold">داخلية للمنظمة:</span> وهي العناصر البيئة داخل المنظمة والتي تنفرد بها عن غيرها.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">خارجية للمنظمة:</span> العناصر من خارج المنظمة ذات العلاقة أو تأثير فيها.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">الكلية للمنظمة:</span> تشمل كل العناصر البيئة الداخلية والخارجية.
+                    </li>
+                </ul>
+
+                <h5 class="text-lg font-medium text-blue-400 mb-2">ب. مرحلة صياغة الاستراتيجية: وتتضمن</h5>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">
+                        <span class="font-semibold">تحديد رسالة المنظمة:</span> تحديد رؤيا شاملة للمنظمة، تحديد الغرض أو سبب وجود المنظمة في بيئة معينة، وتكون مكتوبة تمثل دستور المنظمة والمرشد الرئيس للقرارات، وتغطي فترة زمنية طويلة الأمد.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">تحديد الأهداف القابلة للتحقيق:</span> لتوجيه الجهود، ومنع الأنشطة والانحراف غير الهادف والارتباك عما ينبغي تحقيقه.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">وضع الاستراتيجيات وتطويرها:</span> خطة رئيسة وشاملة تحدد كيف ستنجز المنظمة رسالتها وأهدافها.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">وضع السياسات:</span> هي مجموعة من المبادئ والمفاهيم التي تضعها الإدارة العليا لكي تهتدي بها المستويات الإدارية الأخرى عند وضع الخطط وتنفيذها.
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Section: ثانياً: التطبيق (التنفيذ) -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">ثانياً: التطبيق (التنفيذ)</h4>
+                <p class="mb-3">تنفيذ وتطبيق الاستراتيجية العامة وتتم من قبل مديري الإدارة الوسطى والإشرافية، ولكنها تراجع من قبل الإدارة العليا. ويشار إليها بالتخطيط التشغيلي وتهتم بالمشكلات اليومية لتوزيع الموارد، وتتضمن:</p>
+                <ol class="list-decimal pr-6 mb-4">
+                    <li class="mb-1">
+                        <span class="font-semibold">البرامج:</span> وهي مجموعة من النشاطات والخطوات اللازمة لتحقيق خطة ذات غرض محدد.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">الميزانيات:</span> ترجمة البرامج إلى قيم نقدية، ووضع قوائم تكاليف تفصيلية لكل برنامج لأغراض التخطيط والمتابعة.
+                    </li>
+                    <li class="mb-1">
+                        <span class="font-semibold">الإجراءات:</span> تصف تفصيلي للأنشطة المختلفة التي يجب القيام بها لإنجاز البرامج.
+                    </li>
+                </ol>
+                <p class="mb-3">تحتاج إلى نظرة فلسفية عملية وقدرة على تحريك الموارد بطريقة منظمة ومرتبة.</p>
+                <p class="mb-3">أهم أساس لنجاح المرحلة هو تحقيق تكامل وتعاون بين الأنشطة والوحدات الإدارية المختلفة.</p>
+                <p class="mb-3">الإعداد الناجح لا يعني ضمان نجاح الاستراتيجية، التنفيذ يختلف عن وضع الاستراتيجية من حيث:</p>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">وضع الاستراتيجية بمثابة تحديد موقع للقوات بينما التنفيذ يعني إدارة القوات خلال التحرك.</li>
+                    <li class="mb-1">إعداد الاستراتيجية يركز الفاعلية تنفيذها يركز على الكفاءة.</li>
+                    <li class="mb-1">إعداد الاستراتيجية عملية ذهنية بينما تنفيذها عملية تشغيلية.</li>
+                    <li class="mb-1">وضع الاستراتيجية يتطلب مهارات ذهنية بينما التنفيذ يتطلب مهارات قيادية.</li>
+                    <li class="mb-1">إعداد الاستراتيجية يتطلب تنسيق بين عدد محدود من الأفراد، بينما التنفيذ يتطلب تنسيق بين الكثير من الأفراد.</li>
+                </ol>
+            </section>
+
+            <!-- Section: ثالثاً: التقييم -->
+            <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+                <h4 class="text-xl font-semibold text-blue-500 mb-3">ثالثاً: التقييم</h4>
+                <p class="mb-3">هي عملية مراقبة تحدد فيها الإدارة العليا مدى تحقيق التطبيق الاستراتيجي لأهداف المنظمة وغاياتها ونجاحهم في ذلك.</p>
+                <ul class="list-disc pr-6 mb-4">
+                    <li class="mb-1">يكون على مستوى المنظمة ووحدات الأعمال.</li>
+                    <li class="mb-1">تستخدم فيها معلومات من جميع المستويات الإدارية تكون عن الأداء، المشكلات، وخطط تصحيحية.</li>
+                    <li class="mb-1">الرقابة والتقويم يمثّلان المرحلة النهائية في الإدارة الاستراتيجية إلا أنهما يمثّلان نقاط الضعف في عملية تنفيذ الاستراتيجية.</li>
+                    <li class="mb-1">تتضمن مقارنة النتائج الفعلية بالأهداف المتوقعة من تطبيق الاستراتيجية.</li>
+                    <li class="mb-1">تتطلب معلومات دقيقة وموضوعية وسريعة من العاملين.</li>
+                </ul>
+                <p class="mb-3">تتضمن ثلاثة أنشطة رئيسية:</p>
+                <ol class="list-decimal pr-6">
+                    <li class="mb-1">مراجعة العوامل الداخلية والخارجية.</li>
+                    <li class="mb-1">قياس الأداء.</li>
+                    <li class="mb-1">اتخاذ الإجراءات التصحيحية.</li>
+                </ol>
+                <p class="mt-3">تقييم الاستراتيجية مهم جداً لكل أحجام المنظمات وأنواعها، وينبغي أن تكون عملية مستمرة وليس في فترة محددة.</p>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-6 text-center rounded-t-xl mt-8">
+        <p>&copy; 2025 جامعة إربد الأهلية - جميع الحقوق محفوظة.</p>
+        <p class="text-sm mt-2">مساق مبادئ الإدارة</p>
+        <p class="text-sm mt-1">قيس طلال غالب الجازي</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const adminButton = document.getElementById('showAdministrative');
+            const strategicButton = document.getElementById('showStrategic');
+            const adminContent = document.getElementById('administrative-planning-content');
+            const strategicContent = document.getElementById('strategic-planning-content');
+
+            // Function to show a specific section and hide others
+            function showSection(sectionToShow) {
+                adminContent.classList.remove('active');
+                strategicContent.classList.remove('active');
+                sectionToShow.classList.add('active');
+            }
+
+            // Event listeners for the buttons
+            adminButton.addEventListener('click', function() {
+                showSection(adminContent);
+            });
+
+            strategicButton.addEventListener('click', function() {
+                showSection(strategicContent);
+            });
+
+            // Initially show the administrative planning content
+            showSection(adminContent);
+        });
+    </script>
+</body>
+</html>
